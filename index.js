@@ -63,7 +63,7 @@ function makeAnimation(currentkey){
         activeButton.classList.remove("pressed"), 1000
     });
 }
-document.addEventListener("touchend", function(event){
+document.addEventListener("touchstart", function(event){
     var touch = event.changedTouches[0];
     var element = document.elementFromPoint(touch.clientX, touch.clientY);
     if (element.classList.contains("drum")) {
